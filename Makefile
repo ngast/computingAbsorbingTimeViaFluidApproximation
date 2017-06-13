@@ -1,6 +1,9 @@
-all: do_simu compile_paper
+all: plot_figures compile_paper
 
-do_simu:
+redo_all_simu:
+	cd simu && make clean && make
+
+plot_figures:
 	cd simu && make 
 
 compile_paper:
